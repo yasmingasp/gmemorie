@@ -1,0 +1,94 @@
+.titulo{
+    color: rgb(143, 203, 238);
+    text-align: center;
+    font-size: 30pt;
+}
+
+footer{
+    position: fixed;
+bottom: 0px;
+left: 42%;
+}
+
+.rodape{
+    text-align: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fundo{
+    background-image: url(imagens/index.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundomenu{
+    background-image: url(imagens/menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bntcentro{
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  position: relative;
+  top: 780px;
+  width: 49%;;
+
+}
+
+.bntmenu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px;
+  justify-items: center; 
+  margin-top: 500px;
+  margin-left: 330px;
+  column-gap: 20px;
+}
+
+.bntmenu a {
+  text-decoration: none;
+}
+
+.botao {
+  width: 500px; 
+  padding: 300px 300px;
+  font-size: 20px;
+  text-align: center;
+}
+/* Deixa o carrossel centralizado e com tamanho definido */
+#demo {
+  width: 700px;      /* largura do carrossel */
+  height: 400px;     /* altura do carrossel */
+  margin: auto;      /* centraliza na página */
+  border-radius: 15px; /* cantos arredondados */
+  overflow: hidden;  /* evita que imagens passem do limite */
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.3); /* sombra bonita */
+}
+
+/* Ajusta as imagens para ocuparem o espaço certinho */
+#demo .carousel-item img {
+  width: 100%;
+  height: 400px; /* mesma altura definida acima */
+  object-fit: cover; /* corta o excesso sem distorcer */
+  border-radius: 15px;
+}
+
+/* Estiliza os botões (bolinhas) do indicador */
+#demo .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* Muda a cor do indicador ativo */
+#demo .carousel-indicators .active {
+  background-color: #ff006a;  /* rosa, pode trocar se quiser 💗 */
+}
